@@ -8,11 +8,11 @@ class Signup extends Component {
     
     const BuildFormDetails = [{
         form_title: 'Sign Up', 
-        inputitems:['First Name','Last Name','Email','Password'], 
-        submit:'register'
+        input_items:['First Name','Last Name','Email','Password'], 
+        button_items:['register'],
       }]; 
     const BuildForm = BuildFormDetails.map((item, index)=> 
-              <Buildform key={index} form_title={item.form_title} input={item.inputitems} submit={item.submit}/>
+              <Buildform key={index} form_title={item.form_title} input_items={item.input_items} button_items={item.button_items}/>
             );
     
     return (<div className="signup__container">

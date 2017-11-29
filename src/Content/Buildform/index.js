@@ -5,12 +5,13 @@ import Buttonfield from './Formelements/Buttonfield';
 
 class BuildForm extends Component {
   render() {
-    const { form_title, input:form_input , submit:form_submit } = this.props;
-    const input_items = form_input.map((item, index)=><Textfield form_item={item}/>)
+    const { form_title, input_items:form_input , button_items:form_button } = this.props;
+    const input_items = form_input.map((item, index)=><Textfield key={index} form_item={item}/>);
+    const button_items = form_button.map((item, index)=><Buttonfield key={index} form_item={item}/>)
     return (<form>
               <h3>{form_title}</h3>
               {input_items}
-              <Buttonfield submit_value={ form_submit } />
+              {button_items}
             </form>
             );
   }

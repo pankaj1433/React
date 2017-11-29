@@ -2,9 +2,12 @@ import React,{ Component } from 'react';
 
 class Buttonfield extends Component {
   render() {
-    const { submit_value } = this.props;
-    return (<div className="form-group-submit">
-              <input className="btn btn--form" type="Submit" value={submit_value} id={submit_value.replace(' ','-').toLowerCase()}/>
+    const { form_item } = this.props;
+    return (<div key={this.props.key} className="form-group-submit">
+              <input className="btn btn--form" 
+              type="Button" 
+              value={form_item} 
+              id={String(form_item).replace(' ','-').toLowerCase()}/>
             </div>
             );
   }
