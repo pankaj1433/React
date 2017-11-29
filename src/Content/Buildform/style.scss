@@ -1,0 +1,58 @@
+/*Form Elements*/
+
+h3 {
+  font-weight: 300;
+  color: grey;
+}
+label {
+  font-size: .85rem;
+  text-transform: uppercase;
+  color: #ccc;
+  display: block;
+  margin-bottom: .5rem;
+}
+.form-control {
+  background-color: transparent;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  &:focus {
+    border-color: #111;
+    outline: 0;
+  }
+}
+[type="text"] {color: #111;}
+[type="password"] {color: #111;}
+.btn--form {
+  padding: .5rem 2.5rem;
+  font-size: .95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: #111;
+  border-radius: remy(35px);
+  &:focus,
+  &:hover {background: lighten(#111, 13%);}
+}
+.btn {
+    display: inline-block;
+    padding: .375rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    cursor: pointer;
+    border: .0625rem solid transparent;
+    border-radius: .25rem;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group-submit {
+  margin-top: 3rem!important;
+}
+

@@ -1,0 +1,25 @@
+.header {
+  top: -16px;
+  width: 100%;
+  height: 50px;
+  background-color: grey;
+  position: relative;
+}
+.nav-item {
+  float: left;
+  display: block;
+  padding: 16px;
+  color: white;
+}
+.nav-item:hover {
+  background: white;
+  color: gray
+}
+.nav-item:hover a{
+  color: gray
+}
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}

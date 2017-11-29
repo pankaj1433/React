@@ -1,0 +1,23 @@
+/*user list*/
+@function remy($value) {
+  @return ($value / 16px) * 1rem;
+}
+.user-card {
+  width: calc(50% - 40px);
+  display: inline-block;
+  margin:20px;
+  padding: 20px;
+  border-radius: remy(3px);
+  box-shadow: 0px remy(3px) remy(7px) rgba(0,0,0,.25);
+  background: #fafafa;
+  .tech-item {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 8px 20px;
+    text-transform: lowercase;
+    background: teal;
+    color: white;
+    border-radius: 20px;
+  }
+}
+
