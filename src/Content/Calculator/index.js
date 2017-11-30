@@ -3,9 +3,8 @@ import './style.scss';
 import Buildform from '../Buildform';
 
 class Calculator extends Component {
-
+  
   render() {
-    
     const BuildFormDetails = {
         form_title: 'Calculator', 
         input_items:['Enter Value'], 
@@ -17,7 +16,7 @@ class Calculator extends Component {
                 input_items={BuildFormDetails.input_items} 
                 button_items={BuildFormDetails.button_items}
               />
-              </div>
+            </div>
             );
   }
 }
